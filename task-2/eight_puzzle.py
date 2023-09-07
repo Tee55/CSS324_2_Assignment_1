@@ -50,5 +50,22 @@ def h1(s):
 
 def h3(s):
     # implement this function
-    board, _, _ = s
-    return 0
+    board, r, c = s
+    
+    if r == 0:
+        dis_row = 6
+    elif r == 1:
+        dis_row = 3
+    else:
+        dis_row = 0
+        
+    if c == 0:
+        dis_col = 6
+    elif c == 1:
+        dis_col = 3
+    else:
+        dis_col = 0
+    
+    res = dis_row + dis_col
+    
+    return res
